@@ -419,6 +419,23 @@ export default defineConfig4CustomTheme<VilivalaThemeConfig>({
     //   },
     // },
 
+          'vuepress-plugin-comment':
+          {
+            choosen: 'valine', 
+            // options选项中的所有参数，会传给Valine的配置
+            options: {
+              el: '#valine-vuepress-comment',
+              appId: 'UE360SE1ES9aEB0K8maYqslL-gzGzoHsz',
+              appKey: 'HesnSsC7MOcY97iIaMgDchnS'
+            },
+          
+          //   'new Valine':{
+          //     el:'#vcomments',
+          //     appId: 'UE360SE1ES9aEB0K8maYqslL-gzGzoHsz',
+          //     appKey: 'HesnSsC7MOcY97iIaMgDchnS',
+          //     visitor: true // 阅读量统计
+          // },
+
     // "上次更新"的时间格式
     '@vuepress/last-updated': {
       transformer: (timestamp, lang) => {
@@ -435,4 +452,4 @@ export default defineConfig4CustomTheme<VilivalaThemeConfig>({
   //   '.vuepress/config.ts',
   //   '.vuepress/config/htmlModules.ts',
   // ]
-})
+}})
