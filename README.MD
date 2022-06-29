@@ -388,7 +388,7 @@ module.exports = {
 
           // 有二级导航时
            {text: '页面',
-               link: '/ui/',   //目录页， vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
+               link: '/ui/',   //目录页， vilivala主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
                items: [
                  {text: 'HTML', link: '/pages/11/'},
                  {text: 'CSS', link: '/pages/22/'},
@@ -429,10 +429,10 @@ module.exports = {
 
 ## 主题样式变量
 
-下面是vdoing主题使用的css变量，你可以在`.vuepress/styles/palette.styl`修改这些变量覆盖它们：
+下面是vilivala主题使用的css变量，你可以在`.vuepress/styles/palette.styl`修改这些变量覆盖它们：
 
 ```stylus
-//***vdoing主题-CSS变量***//
+//***vilivala主题-CSS变量***//
 
 // 颜色
 $bannerTextColor = #fff // 首页banner区(博客标题区)的文本颜色

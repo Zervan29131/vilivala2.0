@@ -1,15 +1,14 @@
 import { resolve } from 'path'
 import { defineConfig4CustomTheme } from 'vuepress/config'
-import { VdoingThemeConfig } from 'vuepress-theme-vdoing/types'
+import { VilivalaThemeConfig } from 'vuepress-theme-vilivala/types'
 import dayjs from 'dayjs'
 // import baiduCode from './config/baiduCode' // 百度统计hm码
 import htmlModules from './config/htmlModules' // 自定义插入的html块
 
 
-
-export default defineConfig4CustomTheme<VdoingThemeConfig>({
-  // theme: 'vdoing', // 使用npm包主题
-  theme: resolve(__dirname, '../../vdoing'), // 使用本地主题
+export default defineConfig4CustomTheme<VilivalaThemeConfig>({
+  // theme: 'vilivala', // 使用npm包主题
+  theme: resolve(__dirname, '../../vilivala'), // 使用本地主题
 
   locales: {
 
@@ -32,7 +31,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
       { text: '首页', link: '/' },
       {
         text: 'code',
-        link: '/code/', //目录页链接，此处link是vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
+        link: '/code/', //目录页链接，此处link是vilivala主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
         items: [
          
          // 说明：以下所有link的值只是在相应md文件头部定义的永久链接（不是什么特殊编码）。另外，注意结尾是有斜杠的
@@ -172,7 +171,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     editLinks: true, // 启用编辑
     editLinkText: '编辑',
 
-    //*** 以下是Vdoing主题相关配置，文档：https://doc.xugaoyi.com/pages/a20ce8/ ***//
+    //*** 以下是vilivala主题相关配置，文档：https://doc.xugaoyi.com/pages/a20ce8/ ***//
 
     // category: false, // 是否打开分类功能，默认true
     // tag: false, // 是否打开标签功能，默认true
@@ -273,7 +272,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
       },
     ],
     // ['meta', { name: 'baidu-site-verification', content: '7F55weZDDc' }], // 百度统计的站长验证（你可以去掉）
-    ['meta', { name: 'theme-color', content: '#11a8cd' }], // 移动浏览器主题颜色
+    ['meta', { name: 'theme-color', content: '#28282d' }], // 移动浏览器主题颜色
     // [
     //   'script',
     //   {
@@ -320,7 +319,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     // 导入本地插件（供学习参考）
     // [resolve(__dirname, './plugins/love-me')]: { // 鼠标点击爱心特效
     //   color: '#11a8cd', // 爱心颜色，默认随机色
-    //   excludeClassName: 'theme-vdoing-content' // 要排除元素的class, 默认空''
+    //   excludeClassName: 'theme-vilivala-content' // 要排除元素的class, 默认空''
     // },
 
     // 百度自动推送
@@ -395,7 +394,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
 
     // 放大图片
     'vuepress-plugin-zooming': {
-      selector: '.theme-vdoing-content img:not(.no-zoom)', // not排除class是no-zoom的图片
+      selector: '.theme-vilivala-content img:not(.no-zoom)', // not排除class是no-zoom的图片
       options: {
         bgColor: 'rgba(0,0,0,0.6)',
       },
